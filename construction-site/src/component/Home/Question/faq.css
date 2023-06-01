@@ -1,0 +1,12 @@
+.faq-container{
+ text-align: center;
+}
+.title p{
+    text-align: initial;
+    padding: 0 20px 20px 20px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.title h2{
+    font-size: 30px;
+}

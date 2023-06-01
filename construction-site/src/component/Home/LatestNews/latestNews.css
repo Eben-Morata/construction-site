@@ -1,0 +1,92 @@
+.latest-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+.latest h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.line1{
+   width: 50px;
+   height: 3px;
+   background: rgb(252, 252, 105);
+   position: absolute;
+   top: 45px;
+   left: 27px;
+}
+.latest p{
+    width: 50%;
+    font-size: 17px;
+}
+.latest{
+    padding: 0 30px;
+    position: relative;
+    animation: 2s ease slides;
+}
+@keyframes slides {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.latest-but button{
+    padding: 7px 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10rem;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    transition: all 1s ease;
+}
+.latest-but button:hover{
+    transform: translateX(-5px);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.534);
+}
+.latest-but{
+  animation: 2s ease slides-out;
+}
+@keyframes slides-out {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:970px) {
+    .latest-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .latest{
+        padding: 0 50px 0 20px;
+    }
+    .latest h2{
+        text-align: justify;
+    }
+    .latest p{
+        width: 100%;
+        text-align: initial;
+        font-size: 17px;
+    }
+    .latest-but button{
+        margin-top: 20px;
+        width: 29%;
+        margin-right: 65%;
+    }
+}
